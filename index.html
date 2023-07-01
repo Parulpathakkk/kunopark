@@ -1,99 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/output.css" />
-    <link rel="icon" type="image/x-icon" href="https://kunonationalpark.files.wordpress.com/2023/04/cropped-pngwing.com_.png?w=128&h=128">
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
-      rel="stylesheet"
-    />
-    <!-- fontawesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <title>Kuno Naitional Park</title>
-  </head>
-  <body class="overflow-x-hidden">
-    <div class="w-screen h-full bg-darkgreen r py-2">
-      <div
-        class="container m-auto px-8 lg:px-10 text-end flex justify-end items-cente font-inter text-whitetext font-light text-sm gap-8"
-      >
-        <div>
-          <i class="fa-solid fa-phone"></i>
-          <p class="inline-block">+91 97739878770</p>
-        </div>
-        <p class="">Safari booking</p>
-        <p>Get in Touch</p>
-      </div>
-    </div>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/output.css" />
+        <link rel="icon" type="image/x-icon" href="https://kunonationalpark.files.wordpress.com/2023/04/cropped-pngwing.com_.png?w=128&h=128" />
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet" />
+        <!-- fontawesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <title>Kuno Naitional Park</title>
+    </head>
 
-    <header
-      class="w-screen h-full bg-whitetext box-shadow2 shadow-inner shadow-whitetext"
-    >
-      <div class="container px-8 lg:px-10 m-auto">
-        <div class="flex justify-between items-center py-4">
-          <div class="flex justify-start items-center gap-4">
-            <div>
-              <img
-                class="h-16"
-                src="https://kunonationalpark.files.wordpress.com/2023/04/cropped-pngwing.com_.png?w=128&h=128"
-                alt=""
-              />
+    <body>
+        <!-- Intro -->
+        <div class="w-full h-full bg-darkgreen py-2 md:py-2">
+            <div class="container mx-auto px-4 lg:px-10 text-end flex justify-end items-center gap-4 md:gap-6 lg:gap-8 font-inter text-whitetext xl:font-light text-xs md:text-sm font-medium">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="inline-block">+91 97739878770</p>
+                </div>
+                <p class="">Safari booking</p>
+                <p>Get in Touch</p>
             </div>
-            <div class="flex flex-col">
-              <h1 class="text-3xl font-mont font-bold text-darkgreen">Kuno</h1>
-              <p class="pl-4 text-lightgreen font-medium">NATIONAL PARK</p>
-              <!-- <p class="text-lightgreen">Land of Cheetah in India</p> -->
-              <!-- <i class="fa-regular fa-mobile"></i> -->
+        </div>
+        <!-- Header -->
+        <header class="w-full h-full bg-whitetext">
+            <div class="container mx-auto px-4 lg:px-10 md:py-2">
+                <div class="flex justify-between items-center">
+                    <div class="flex justify-start gap-2 xl:gap-3 items-center">
+                        <img class="h-16 xl:h-20" src="https://kunonationalpark.files.wordpress.com/2023/04/cropped-pngwing.com_.png?w=128&h=128" alt="" />
+                        <div class="text-darkgreen font-inter font-semibold text-[15px] md:text-[17px] lg:text-2xl">Kuno National Park</div>
+                    </div>
+                    <div class="hidden lg:flex justify-between items-center float-right font-inter text-textgray gap-5 2xl:gap-8 text-[17px] 2xl:text-base font-medium">
+                        <a href="" class="hover:text-textblack text-textblack">Home</a>
+                        <a href="" class="hover:text-textblack">About</a>
+                        <a href="" class="hover:text-textblack">Wildlife</a>
+                        <a href="" class="hover:text-textblack">Travel Info</a>
+                        <a href="" class="hover:text-textblack">Safaris</a>
+                        <a href="" class="hover:text-textblack">Tour Packages</a>
+                        <a href="" class="hover:text-textblack">Hotels</a>
+                        <a href="" class="hover:text-textblack">Travel Tips</a>
+                    </div>
+                    <div class="lg:hidden"><img class="h-[14px] md:h-4 object-cover" src="./assets/hamburger-black.svg" alt="" /></div>
+                </div>
             </div>
-          </div>
+        </header>
 
-          <div
-            class="flex justify-between items-center gap-7 text-textgray text-lg font-medium"
-          >
-            <a href="" class="text-textblack">Home</a>
-            <a href="">About</a>
-            <a href="">Tourist Information</a>
-            <a href="">Park Management</a>
-            <a href="">Gallery</a>
-            <a href="">Info Corner</a>
-            <a href="">Contact us</a>
-          </div>
-        </div>
-      </div>
-    </header>
+        <!-- main section-->
+        <section class="w-full h-full relative py-24">
+            <div class="h-full w-full bg-darkgreen absolute top-0 bottom-0 -z-10">
+                <img class="h-full w-full opacity-30 lg:hidden" src="./assets/forresttop.jpg" alt="" />
+                <img class="h-full w-full opacity-30 lg:block hidden" src="./assets/forrestbg.png" alt="" />
+            </div>
 
-    <!-- main page -->
-    <section class="w-full h-full relative">
-      <div class="bg-textblack  absolute -z-10 top-0 bottom-0 w-full">
-        <img
-        class="h-full w-full object-cover opacity-50"
-        src="./assets/forrestbg.png"
-        alt=""
-      />
-      </div>
+            <div class="container px-4 lg:px-10 mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 items-center xl:gap-12">
+                    <div class="font-inter font-bold text-5xl xl:text-7xl 2xl:leading-[1.1] text-whitetext text-center">Join us on a Journey into The Heart of The Wild!</div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 w-[90%] lg:w-full mx-auto items-center gap-y-3 md:gap-8 pt-12 xl:pt-0">
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                        <div class="h-[130px] rounded-full"><img class="h-full w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" /></div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-      <div class="container px-8 lg:px-10 m-auto  w-full h-full">
-        <div class="flex justify-between  w-full h-full gap-12">
-          <div class="text-whitetext xl:text-7xl font-bold flex-[40%] pt-14 xl:leading-[1.3]">Join us on a Journey into The Heart of The Wild!</div>
-          <div class="grid grid-cols-2 items-center flex-[60%] py-24 gap-12 w-full h-full">
-            <div class="rounded-3xl border border-darkgreen"><img class="rounded-3xl" src="./assets/cheetah.png" alt=""></div>
-            <div class="rounded-3xl border border-darkgreen"><img class="rounded-3xl"  src="./assets/cheetah.png" alt=""></div>
-            <div class="rounded-3xl border border-darkgreen"><img class="rounded-3xl"  src="./assets/cheetah.png" alt=""></div>
-            <div class="rounded-3xl border border-darkgreen"><img class="rounded-3xl"  src="./assets/cheetah.png" alt=""></div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </body>
+        <!-- Welcome -->
+        <section class="w-full h-full py-12 xl:pt-24 xl:pb-44 relative">
+            <div class="h-full w-full bg-darkgreen absolute top-0 bottom-0 -z-10">
+                <img class="h-full w-full opacity-70 object-top" src="./assets/foggydeer.jpg" alt="" />
+            </div>
+            <div class="container px-4 lg:px-10 mx-auto h-full w-full md:w-[75%] lg:w-full lg:flex justify-between items-center">
+                <div class="flex-[50%]">
+                    <h1 class="text-darkgreen font-inter font-semibold text-2xl xl:text-5xl xl:w-[75%]">Welcome To Kuno National Park</h1>
+                    <p class="text-darkgreen font-inter text-base pt-2 xl:w-[60%] xl:pt-6 xl:text-base">
+                        The highest density of Royal Bengal Tigers, a plethora of magnificent flora and fauna - Bandhavgarh is the most-visited protected wildlife reserve in the country.
+                    </p>
+                </div>
+                <div class="flex-[50%]">
+                    <div class="xl:w-[70%] ml-auto">
+                        <p class="font-inter text-textblack font-light text-[15px] pt-12 xl:text-base">
+                            Bandhavgarh National Park is spread over the Vindhya hills in Madhya Pradesh. The national park consists of a core area of 105 sq km and a buffer area of approximately 400 sq km. The topography of the whole area varies
+                            between steep ridges, undulating forest and open meadows. Bandhavgarh National Park is known for the Royal Bengal Tigers. The density of the tiger population at Bandhavgarh is the highest known in India as well as in the
+                            world. The national park was the former hunting preserve of the Maharaja of Rewa and at present is a famous natural hub for White Tigers. White Tigers, now a major attraction around the world’s zoos, were first discovered
+                            in Rewa, not far from here. It is also believed that all the white tigers across the globe trace their roots to Bandhavgarh. The terrain is broken, with rocky hill ranges, running roughly east and west, interspersed with
+                            grassy swamps and forested valleys.
+                        </p>
+                        <button class="mx-auto p-3 lg:w-[30%] bg-whitetext text-darkgreen w-full border border-darkgreen mt-8 rounded-lg text-sm font-medium xl:text-base">Read more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Things to do -->
+        <section class="w-full h-full bg-[#f1eee9] py-12 xl:py-24">
+            <div class="container px-4 lg:px-10 mx-auto lg:flex justify-between gap-24">
+                <div class="flex-[40%]">
+                    <h1 class="text-darkgreen font-inter font-semibold text-2xl xl:text-5xl xl:pt-12">Things To Do</h1>
+                    <p class="text-darkgreen font-inter text-base pt-2 xl:pt-6 xl:text-base">Experience the ultimate adventure in Bandhavgarh National Park</p>
+                    <button class="mx-auto p-3 lg:w-[30%] bg-whitetext text-darkgreen w-full border border-darkgreen mt-8 rounded-lg text-sm font-medium xl:text-base">Explore Now</button>
+                </div>
+                <!-- dp -->
+                <div class="flex-[60%] w-full h-full hidden lg:block">
+                    <div class="pb-4 h-[300px]">
+                        <img class="rounded-3xl h-full w-full object-cover" src="./assets/cheetah.png" alt="" />
+                    </div>
+
+                    <div class="flex justify-between w-full h-full gap-4">
+                        <div class="flex flex-col gap-4 w-full h-full">
+                            <img class="rounded-3xl h-full w-full object-cover" src="./assets/cheetah2.png" alt="" />
+                            <img class="rounded-3xl h-full w-full object-cover" src="./assets/elephant.jpg" alt="" />
+                        </div>
+                        <div class="w-full h-[400px]">
+                            <img class="rounded-3xl h-full w-full object-cover" src="./assets/forresttop.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+                <!-- phone -->
+                <div class="grid grid-cols-1 md:grid-cols-2 w-[90%] lg:w-full mx-auto items-center gap-y-3 md:gap-8 pt-12 xl:pt-0 lg:hidden">
+                    <div class="h-[130px] rounded-full relative bg-textblack">
+                        <img class="h-full opacity-70 w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" />
+                        <p class="text-whitetext absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 text-2xl font-inter">Birds</p>
+                    </div>
+                    <div class="h-[130px] rounded-full relative bg-textblack">
+                        <img class="h-full opacity-70 w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" />
+                        <p class="text-whitetext absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 text-2xl font-inter">Birds</p>
+                    </div>
+                    <div class="h-[130px] rounded-full relative bg-textblack">
+                        <img class="h-full opacity-70 w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" />
+                        <p class="text-whitetext absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 text-2xl font-inter">Birds</p>
+                    </div>
+                    <div class="h-[130px] rounded-full relative bg-textblack">
+                        <img class="h-full opacity-70 w-full object-cover rounded-full" src="./assets/cheetah3.jpg" alt="" />
+                        <p class="text-whitetext absolute top-1/2 -translate-y-1/2 -translate-x-1/2 left-1/2 text-2xl font-inter">Birds</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist attraction -->
+        <section class="w-full h-full py-12 xl:py-24 bg-[#FCFCFC]">
+            <div class="container px-4 lg:px-10 mx-auto ">
+                <p class="font-inter text-xs font-semibold tracking-wider text-textgray">Kuno</p>
+                <h1 class="text-darkgreen font-inter font-semibold text-2xl xl:text-5xl xl:w-[60%] ">Popular Tourist Attractions in Bandhavgarh</h1>
+                <div class="lg:flex justify-between items-center gap-16">
+                    <div class="flex-[50%]">
+                 
+                        <div class="mt-12 rounded-lg">
+                            <img class="h-full w-full object-cover rounded-lg" src="./assets/cheetah2.png" alt="" />
+                        </div>
+                    </div>
+    
+                    <div class="swiper mySwiper2  flex-[50%]">
+                        <div class="swiper-wrapper ">
+                            <div class="swiper-slide ">
+                                <div class="flex flex-col items-center pt-12">
+                                    <div class="w-[180px] xl:w-[230px] aspect-square rounded-3xl"><img class="rounded-3xl w-full h-full object-cover" src="./assets/tiger.jpg" alt="" /></div>
+                                    <div class="pt-6 text-center">
+                                        <h1 class="font-inter text-textblack text-base font-medium">Sheesh Shaiya</h1>
+                                        <p class="text-textblack font-inter text-sm font-light pt-2">
+                                            Kuno National Park is a wildlife sanctuary located in the Sheopur district of Madhya Pradesh, India. It is renowned for its efforts in reintroducing the Asiatic lion, also known as the Indian lion, to its
+                                            historic range. The park spans an area of approximately 344 square kilometers (133 square miles) and is characterized by its diverse landscape, including grasslands, dry deciduous forests, and rocky outcrops.
+                                            It is situated in the Vindhyan Range, which provides a suitable habitat for a variety of wildlife species
+                                        </p>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="flex flex-col items-center pt-12">
+                                    <div class="w-[180px] xl:w-[230px] aspect-square rounded-3xl"><img class="rounded-3xl w-full h-full object-cover" src="./assets/tiger.jpg" alt="" /></div>
+                                    <div class="pt-6 text-center">
+                                        <h1 class="font-inter text-textblack text-base font-medium">Sheeshdasdfsdf Shaiya</h1>
+                                        <p class="text-textblack font-inter text-sm font-light pt-2">
+                                            Kuno National Park is a wildlife sanctuary located in the Sheopur district of Madhya Pradesh, India. It is renowned for its efforts in reintroducing the Asiatic lion, also known as the Indian lion, to its
+                                            historic range. The park spans an area of approximately 344 square kilometers (133 square miles) and is characterized by its diverse landscape, including grasslands, dry deciduous forests, and rocky outcrops.
+                                            It is situated in the Vindhyan Range, which provides a suitable habitat for a variety of wildlife species
+                                        </p>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="flex justify-center gap-12 pt-6 xl:pt-9">
+                            <div class=".prevtour"><img src="./assets/leftarrow.svg" alt="" /></div>
+                            <div class=".nexttour"><img src="./assets/rightarrow.svg" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section>
+
+         <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper2", {
+      navigation: {
+        nextEl: ".nexttour",
+        prevEl: ".prevtour",
+      },
+      loop: true,
+    });
+  </script>
+    </body>
 </html>
